@@ -12,6 +12,18 @@ The Exam Module is part of the Online Exam Portal, designed to facilitate the cr
 - The backend exposes REST APIs for managing exam attempts and reports.
 - The database stores exam attempts, answers, and scores.
 
+## Dependencies
+- **Spring Boot Starter Web**: For building REST APIs.
+- **Spring Boot Starter Data JPA**: For database interaction using JPA.
+- **Spring Boot Starter Security**: For securing the application (e.g., JWT authentication).
+- **MySQL Connector**: For connecting to the MySQL database.
+- **Hibernate**: For ORM (Object-Relational Mapping) functionality.
+- **Spring Boot Starter Validation**: For validating user inputs.
+- **Spring Boot Starter Test**: For testing the application.
+- **Jakarta Persistence API**: For entity mapping and persistence.
+- **JWT Library**: For handling JSON Web Tokens (authentication).
+- **Spring Boot Starter Actuator**: For monitoring and managing the application.
+
 ## Database Tables
 ### ExamAttempts Table
 - **Primary Key**: `id`
@@ -86,3 +98,4 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 jwt.secret=S2x3y2EXoofdtjzwzPRUgH3RDlse7lotS2x3y2EXoofdtjzwzPRUgH3RDlse7lot
+```
